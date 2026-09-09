@@ -385,10 +385,15 @@ def run_single_pipeline(input_path, output_path, model, device, batch_size, is_d
         for b in range(0, original_shape[0], batch_size):
             batch_x = x_model_input[b : b+batch_size]
             batch_pred = model(batch_x)
-            pred_tensors.append(batch_pred)
+            # 立即断开计算图，避免内存累加
+            pred_tensors.append(batch_pred.detach())
+            del batch_x, batch_pred
             sub_progress.progress(0.1 + 0.5 * (b / original_shape[0]), text=lang_dict["status_infer"])
             
         pred_tensor = torch.cat(pred_tensors, dim=0)
+        del pred_tensors
+
+        gc.collect()
         
         if pad_h > 0 or pad_w > 0:
             pred_tensor = pred_tensor[:, :, :H_orig, :W_orig]
