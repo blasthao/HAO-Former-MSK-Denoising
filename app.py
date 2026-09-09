@@ -24,6 +24,10 @@ import warnings
 import logging
 
 from pathlib import Path
+# 强制将当前仓库目录加入 Python 模块搜索路径第一位
+ROOT_DIR = Path(__file__).resolve().parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
 # ==========================================
 # 自动定位模型权重绝对路径
@@ -55,7 +59,7 @@ except ImportError:
     HAS_PACS_LIBS = False
 
 # 导入您的 Transformer 网络
-from networks import Restormer
+from model_networks import Restormer
 
 # ==========================================
 # 0. 网页基础配置与多语言字典
