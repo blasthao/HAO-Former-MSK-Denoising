@@ -585,7 +585,7 @@ def main():
     device_name = "GPU (CUDA)" if torch.cuda.is_available() else "CPU"
     st.sidebar.info(f"{t['device_info']} **{device_name}**")
     
-    batch_size = st.sidebar.slider(t['batch_size'], min_value=1, max_value=1, value=1, step=1)
+    batch_size = st.sidebar.selectbox(t['batch_size'], [1], index=0)
     
     st.sidebar.markdown("---")
     st.sidebar.header(t["pacs_title"])
