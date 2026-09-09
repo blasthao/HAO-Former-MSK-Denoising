@@ -3,6 +3,8 @@
 
 **HAO-Former** is an intelligent musculoskeletal (MSK) magnetic resonance imaging (MRI) denoising and quality enhancement platform[cite: 10]. Designed for both proton density-weighted (PD) and T1-weighted sequences, the framework integrates transformer-based feature extraction with high-frequency anatomical detail compensation to suppress image noise while preserving trabecular structures and tissue boundaries[cite: 10]. The system incorporates an Intra-Tissue Homogeneous Patch (ITHP) objective quality assessment engine and full picture archiving and communication system (PACS) network integration[cite: 10].
 
+You can also try this app on: https://hao-former-msk-denoising.streamlit.app/
+
 ---
 
 ## 🌟 Key Features
