@@ -547,7 +547,7 @@ def run_single_pipeline(input_path, output_path, model, device, batch_size, is_d
 
         sub_progress.progress(1.0, text=lang_dict["success"])
         
-        del con_tensor_3d, x_model_input, pred_tensors, pred_tensor, out_physical_tensor
+        del con_tensor_3d, x_model_input, pred_tensors, out_physical_tensor
         torch.cuda.empty_cache()
         gc.collect()
         
