@@ -1,7 +1,7 @@
 
 # HAO-Former: A Hybrid-loss Aware Ortho-Transformer for MSK-MRI Denoising
 
-**HAO-Former** is an intelligent musculoskeletal (MSK) magnetic resonance imaging (MRI) denoising and quality enhancement platform[cite: 10]. Designed for both proton density-weighted (PD) and T1-weighted sequences, the framework integrates transformer-based feature extraction with high-frequency anatomical detail compensation to suppress image noise while preserving trabecular structures and tissue boundaries[cite: 10]. The system incorporates an Intra-Tissue Homogeneous Patch (ITHP) objective quality assessment engine and full picture archiving and communication system (PACS) network integration[cite: 10].
+**HAO-Former** is an intelligent musculoskeletal (MSK) magnetic resonance imaging (MRI) denoising and quality enhancement platform. Designed for both proton density-weighted (PD) and T1-weighted sequences, the framework integrates transformer-based feature extraction with high-frequency anatomical detail compensation to suppress image noise while preserving trabecular structures and tissue boundaries. The system incorporates an Intra-Tissue Homogeneous Patch (ITHP) objective quality assessment engine and full picture archiving and communication system (PACS) network integration.
 
 You can also try this app on: https://hao-former-msk-denoising.streamlit.app/
 
@@ -9,14 +9,14 @@ You can also try this app on: https://hao-former-msk-denoising.streamlit.app/
 
 ## 🌟 Key Features
 
-* **Intelligent Sequence Routing**: Automatically detects the presence of `PD` or `T1` tags in the input filenames and routes images to the corresponding specialized model weights[cite: 10].
-* **High-Frequency Detail Preservation**: Incorporates a trabecular and microstructural detail booster to prevent over-smoothing and preserve sharp musculoskeletal boundaries[cite: 10].
+* **Intelligent Sequence Routing**: Automatically detects the presence of `PD` or `T1` tags in the input filenames and routes images to the corresponding specialized model weights.
+* **High-Frequency Detail Preservation**: Incorporates a trabecular and microstructural detail booster to prevent over-smoothing and preserve sharp musculoskeletal boundaries.
 * **Multi-Format & PACS Compatibility**:
-  * Supports 3D NIfTI volumes (`.nii.gz`) and batch DICOM archives (`.zip`)[cite: 10].
-  * Generates valid DICOM series with newly assigned Series and SOP Instance UIDs, compliant with PACS storage standards[cite: 10].
-  * Provides built-in DICOM network communication utilities, including C-ECHO verification and C-STORE push capability[cite: 10].
+  * Supports 3D NIfTI volumes (`.nii.gz`) and batch DICOM archives (`.zip`).
+  * Generates valid DICOM series with newly assigned Series and SOP Instance UIDs, compliant with PACS storage standards.
+  * Provides built-in DICOM network communication utilities, including C-ECHO verification and C-STORE push capability.
 * **Objective Quality Evaluation (ITHP Engine)**: Automatically calculates intra-tissue signal-to-noise ratio (Auto-SNR), contrast-to-noise ratio (Auto-CNR), differential peak signal-to-noise ratio (Diff-PSNR), structural fidelity (Diff-SSIM), and relative noise attenuation (RNA %)[cite: 10].
-* **Interactive Multilingual Interface**: Built on Streamlit with dynamic multilingual support across English, 中文 (Chinese), and 日本語 (Japanese), featuring synchronous side-by-side slice previews[cite: 10].
+* **Interactive Multilingual Interface**: Built on Streamlit with dynamic multilingual support across English, 中文 (Chinese), and 日本語 (Japanese), featuring synchronous side-by-side slice previews.
 
 ---
 
