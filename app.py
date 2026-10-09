@@ -69,7 +69,7 @@ st.set_page_config(page_title="HAO-Former MSK Denoising", layout="wide", page_ic
 LANGUAGES = {
     "中文 (Chinese)": {
         "title": "HAO-Former: A Hybrid-loss Aware Ortho-Transformer",
-        "subtitle": "肌骨磁共振通用智能降噪与增强诊断平台 v1.0",
+        "subtitle": "Code: https://github.com/blasthao/HAO-Former-MSK-Denoising",
         "sidebar_title": "⚙️ 控制面板",
         "device_info": "当前计算设备: ",
         "batch_size": "推理批次大小 (Batch Size):",
@@ -104,7 +104,7 @@ LANGUAGES = {
     },
     "English": {
         "title": "HAO-Former: A Hybrid-loss Aware Ortho-Transformer",
-        "subtitle": "General MSK-MRI Intelligent Denoising & Diagnostic Enhancement Platform v1.0",
+        "subtitle": "Code: https://github.com/blasthao/HAO-Former-MSK-Denoising",
         "sidebar_title": "⚙️ Control Panel",
         "device_info": "Compute Device: ",
         "batch_size": "Inference Batch Size:",
@@ -139,7 +139,7 @@ LANGUAGES = {
     },
     "日本語 (Japanese)": {
         "title": "HAO-Former: A Hybrid-loss Aware Ortho-Transformer",
-        "subtitle": "筋骨格MRI 汎用インテリジェントノイズ除去・診断支援プラットフォーム v1.0",
+        "subtitle": "Code: https://github.com/blasthao/HAO-Former-MSK-Denoising",
         "sidebar_title": "⚙️ コントロールパネル",
         "device_info": "現在の計算デバイス: ",
         "batch_size": "推論バッチサイズ:",
